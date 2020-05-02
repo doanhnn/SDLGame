@@ -25,6 +25,25 @@ const int COLOR_KEY_B = 180;
 
 const int RENDER_DRAW_COLOR = 0xff;
 
+// Tile map
+
+#define TILE_SIZE 64
+
+#define MAX_MAP_X_ 400
+#define MAX_MAP_Y_ 10
+
+typedef struct Map
+{
+	int start_x_;
+	int start_y_;	
+
+	int max_x_;
+	int max_y_;
+
+	int tile[MAX_MAP_X_][MAX_MAP_Y_];	
+	char* file_name_;
+};
+
 
 #endif // !COMMON_FUNCTION_H_
 

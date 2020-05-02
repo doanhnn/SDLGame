@@ -123,11 +123,16 @@
   <ItemGroup>
     <ClCompile Include="BaseObject.cpp" />
     <ClCompile Include="CommonFunc.cpp" />
+    <ClCompile Include="game_map.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseObject.h" />
     <ClInclude Include="CommonFunction.h" />
+    <ClInclude Include="game_map.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tilemap.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
