@@ -1,4 +1,5 @@
 #include "CommonFunction.h"
+#include "game_map.h"
 
 #undef main
 
@@ -68,6 +69,10 @@ int main(int arc, char* argv[])
 	if (!LoadBackground())
 		return -1;
 
+	GameMap game_map;
+	game_map.LoadMap((char*)"map/map01.dat");
+	game_map.LoadTiles(g_screen);
+
 	bool is_quit = false;
 	while (!is_quit)
 	{
@@ -83,6 +88,7 @@ int main(int arc, char* argv[])
 		SDL_RenderClear(g_screen);
 
 		g_background.Render(g_screen, NULL);
+		game_map.DrawMap(g_screen);
 
 		SDL_RenderPresent(g_screen); // Update screen again
 	}
