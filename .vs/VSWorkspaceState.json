@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SDLGame",
+    "\\SDLGame\\map"
   ],
   "PreviewInSolutionExplorer": false
 }

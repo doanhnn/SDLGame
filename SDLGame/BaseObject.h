@@ -13,7 +13,7 @@ public:
 	SDL_Rect getRect() const { return rect_; }
 	SDL_Texture* GetObject() const { return p_object_; } //Dam bao tinh chat che, chi lay ra
 
-	bool LoadImg(std::string path, SDL_Renderer* screen);
+	virtual bool LoadImg(std::string path, SDL_Renderer* screen);  // Ham ao => ham ke thua co the chinh sua them
 	void Render(SDL_Renderer* des, const SDL_Rect* clip = NULL);
 	void Free();
 

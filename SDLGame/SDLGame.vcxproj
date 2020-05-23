@@ -125,14 +125,19 @@
     <ClCompile Include="CommonFunc.cpp" />
     <ClCompile Include="game_map.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseObject.h" />
     <ClInclude Include="CommonFunction.h" />
     <ClInclude Include="game_map.h" />
+    <ClInclude Include="MainObject.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="tilemap.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

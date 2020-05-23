@@ -6,8 +6,6 @@
 #include<Windows.h>
 #include<SDL.h>
 #include<SDL_image.h>
-//#include<SDL_mixer.h>
-//#include<SDL_ttf.h>
 #include "BaseObject.h"
 
 static SDL_Window* g_window = NULL;
@@ -29,8 +27,10 @@ const int RENDER_DRAW_COLOR = 0xff;
 
 #define TILE_SIZE 64
 
-#define MAX_MAP_X_ 400
-#define MAX_MAP_Y_ 10
+#define MAX_MAP_X_ 400  // so o toi da trong map theo chieu ngang
+#define MAX_MAP_Y_ 10   // so o toi da trong map theo chieu cao
+
+#define BLANK_TILE 0
 
 typedef struct Map
 {
@@ -40,8 +40,18 @@ typedef struct Map
 	int max_x_;
 	int max_y_;
 
-	int tile[MAX_MAP_X_][MAX_MAP_Y_];	
+	int tile[MAX_MAP_Y_][MAX_MAP_X_];	
 	char* file_name_;
+};
+
+// Animation
+typedef struct Input
+{
+	int left_;     // nhan vat di ve phia sau
+	int right_;    // nhan vat di ve phia truoc
+	int up_;       // nhan vat nhay len tren
+	int down_;     // nhan vat nam xuong
+	int jump_;     // nhan vat nhay
 };
 
 
