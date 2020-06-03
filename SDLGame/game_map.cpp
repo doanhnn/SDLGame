@@ -43,7 +43,7 @@ void GameMap::LoadMap(char* name)
 	fclose(fp);
 }
 
-// Load image
+// Load image cho tung tile (cell)
 void GameMap::LoadTiles(SDL_Renderer* screen)
 {
 	char file_img[11];
@@ -79,11 +79,11 @@ void GameMap::DrawMap(SDL_Renderer* screen)
 	int map_x = 0;
 	int map_y = 0;
 
-	map_x = game_map_.start_x_ / TILE_SIZE;  // index of cell
+	map_x = game_map_.start_x_ / TILE_SIZE;  // index of cell tile
 	x1 = (game_map_.start_x_%TILE_SIZE)*-1;
 	x2 = x1 + SCREEN_WIDTH + (x1 == 0 ? 0 : TILE_SIZE);
 
-	map_y = game_map_.start_y_ / TILE_SIZE; // index of cell
+	map_y = game_map_.start_y_ / TILE_SIZE; // index of cell tile
 	y1 = (game_map_.start_y_%TILE_SIZE)*-1;
 	y2 = y1 + SCREEN_HEIGHT + (y1 == 0 ? 0 : TILE_SIZE);
 
@@ -95,7 +95,7 @@ void GameMap::DrawMap(SDL_Renderer* screen)
 			int val = game_map_.tile[map_y][map_x];
 			if (val > 0)
 			{
-				tile_mat[val].setRect(j, i);
+				tile_mat[val].setRect(j, i);   ///////////////////////////////////////
 				tile_mat[val].Render(screen);
 			}
 			map_x++;

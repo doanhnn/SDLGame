@@ -16,7 +16,7 @@ bool InitData()
 	// Thiet lap ti le ve chat luong
 	//SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 
-	g_window = SDL_CreateWindow("Ride bicycle across Vietnam! Hihi",
+	g_window = SDL_CreateWindow("SDL_Game",
 								SDL_WINDOWPOS_UNDEFINED, 
 								SDL_WINDOWPOS_UNDEFINED, 
 								SCREEN_WIDTH, SCREEN_HEIGHT, 
@@ -27,7 +27,7 @@ bool InitData()
 	}
 	else
 	{
-		g_screen = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED);
+		g_screen = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED);   // render using hardware
 		if (g_screen == NULL)
 		{
 			success = false;
@@ -89,11 +89,7 @@ int main(int arc, char* argv[])
 			p_player.HandleInputAction(g_event, g_screen);
 		}
 
-		SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
-		SDL_RenderClear(g_screen);
-
 		g_background.Render(g_screen, NULL);
-		//game_map.DrawMap(g_screen);
 		Map map_data = game_map.getMap();
 
 		p_player.SetMapXY(map_data.start_x_, map_data.start_y_);

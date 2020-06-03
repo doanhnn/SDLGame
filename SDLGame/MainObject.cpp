@@ -160,6 +160,10 @@ void MainObject::HandleInputAction(SDL_Event events, SDL_Renderer* screen)
 				LoadImg("img//jump_left.png", screen);
 			}
 		}
+		case SDLK_UP:
+		{
+			input_type_.jump_ = 1;
+		}
 		default:
 			break;
 		}
@@ -176,14 +180,8 @@ void MainObject::HandleInputAction(SDL_Event events, SDL_Renderer* screen)
 		{
 			input_type_.left_ = 0;
 		}
-		}
-	}
-	
-	if (events.type == SDL_MOUSEBUTTONDOWN)
-	{
-		if (events.button.button == SDL_BUTTON_RIGHT)
-		{
-			input_type_.jump_ = 1;
+		case SDLK_UP:
+			input_type_.jump_ = 0;
 		}
 	}
 }
@@ -203,22 +201,25 @@ void MainObject::DoPlayer(Map &map_data)
 		if (input_type_.left_)
 		{
 			x_val_ -= PLAYER_SPEED;
+			input_type_.jump_ = 0;
 		}
 		else if (input_type_.right_)
 		{
 			x_val_ += PLAYER_SPEED;
+			input_type_.jump_ = 0;
 		}
-
+		
 		if (input_type_.jump_)
 		{
 			if (on_ground_)
 			{
-				y_val_ = -PLAYER_JUMP_VAL;
-				on_ground_ = false;
+				//y_val_ = -PLAYER_JUMP_VAL;
+				y_val_ = -(3 * TILE_SIZE);
+				//on_ground_ = false;
 			}
 
 			input_type_.jump_ = 0;
-		}
+		}	
 
 		CheckToMap(map_data);
 		CenterEntityOnMap(map_data);

@@ -5,10 +5,10 @@
 #include "CommonFunction.h"
 #include "BaseObject.h"
 
-#define GRAVITY_SPEED 0.8
-#define MAX_FALL_SPEED 10
-#define PLAYER_SPEED 8 
-#define PLAYER_JUMP_VAL 80
+#define GRAVITY_SPEED 3
+#define MAX_FALL_SPEED 8
+#define PLAYER_SPEED 5
+#define PLAYER_JUMP_VAL 0.5
 
 class MainObject : public BaseObject
 {
@@ -26,7 +26,7 @@ public:
 	void HandleInputAction(SDL_Event events, SDL_Renderer* screen); 
 	void setClips(); // tao hieu ung clip cho nhan vat
 
-	void DoPlayer(Map &map_data); // coongj vao nhan vat di chuyen
+	void DoPlayer(Map &map_data); // Xu li di chuyen
 	void CheckToMap(Map &map_data); // Kiem tra va cham
 	void SetMapXY(const int map_x, const int map_y) { this->map_x_ = map_x; this->map_y_ = map_y; }   // set vi tri x y cua ban do
 	void CenterEntityOnMap(Map &map_data);  // tinh toan thong so ban do de man hinh di chuyen theo nhan vat

@@ -1,0 +1,10 @@
+﻿  BaseObject.cpp
+c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(7): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  CommonFunc.cpp
+c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(7): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  game_map.cpp
+c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(7): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  main.cpp
+c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(7): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  MainObject.cpp
+c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(7): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory

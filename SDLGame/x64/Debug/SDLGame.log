@@ -1,26 +1,4 @@
-﻿  MainObject.cpp
+﻿  main.cpp
 c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(45): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
 c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(55): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(117): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(118): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(196): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(249): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(259): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(281): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(282): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(284): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(285): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(301): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(310): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(318): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(319): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(321): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(322): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(330): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(340): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\mainobject.cpp(355): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(45): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
-c:\users\doanhnn\source\repos\sdlgame\sdlgame\commonfunction.h(55): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
-  Generating Code...
   SDLGame.vcxproj -> C:\Users\doanhnn\source\repos\SDLGame\x64\Debug\SDLGame.exe

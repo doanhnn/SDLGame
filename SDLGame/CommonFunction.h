@@ -21,7 +21,7 @@ const int COLOR_KEY_R = 167;
 const int COLOR_KEY_G = 175;
 const int COLOR_KEY_B = 180;
 
-const int RENDER_DRAW_COLOR = 0xff;
+const int RENDER_DRAW_COLOR = 0xff; // 255
 
 // Tile map
 
